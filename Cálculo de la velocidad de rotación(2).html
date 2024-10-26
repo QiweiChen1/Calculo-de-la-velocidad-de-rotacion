@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de la Velocidad de Rotación (VR)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .step {
+            margin-bottom: 20px;
+        }
+        .formula {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #2980b9;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo de la Velocidad de Rotación (VR)</h1>
+    
+    <p>Para calcular la velocidad de rotación (VR) de un avión, es fundamental seguir una serie de pasos que permiten determinar los parámetros necesarios. A continuación, se detallan los pasos para calcular cada dato relevante:</p>
+    
+    <div class="step">
+        <h2>1. Determinar la Velocidad de Pérdida (V<sub>S</sub>)</h2>
+        <p>La velocidad de pérdida es la velocidad mínima a la que un avión puede volar en una configuración específica sin perder sustentación.</p>
+        <div class="formula">
+            <p><strong>Cómo calcular V<sub>S</sub>:</strong></p>
+            <ul>
+                <li><strong>Manuales de rendimiento:</strong> Proporcionan valores específicos para cada configuración.</li>
+                <li><strong>Tablas de datos de la aeronave:</strong> A menudo incluidas en el manual de operaciones del piloto.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>2. Obtener el Peso Actual del Avión</h2>
+        <div class="formula">
+            <p><strong>Cómo calcular el peso actual:</strong></p>
+            <p><code>Peso Actual = Peso Vacío + Peso de Combustible + Peso de Pasajeros + Peso de Carga</code></p>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>3. Determinar el Peso de Referencia</h2>
+        <p>El peso de referencia es un valor conocido que se utiliza para calcular el ajuste de la velocidad de rotación.</p>
+        <div class="formula">
+            <p><strong>Cómo obtener el peso de referencia:</strong></p>
+            <ul>
+                <li>Se encuentra en las especificaciones de la aeronave o en los manuales de rendimiento.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>4. Calcular el Exponente (n)</h2>
+        <p>El exponente <code>n</code> se utiliza para ajustar la velocidad de rotación según el aumento de peso.</p>
+        <div class="formula">
+            <p><strong>Cómo determinar <code>n</code>:</strong></p>
+            <ul>
+                <li><strong>Referencia en manuales:</strong> A menudo se proporciona en los manuales de operación o rendimiento del avión.</li>
+                <li><strong>Estudios de diseño:</strong> Algunos aviones tienen valores específicos derivados de estudios aerodinámicos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>5. Calcular VR Usando la Fórmula</h2>
+        <div class="formula">
+            <p><strong>Fórmula:</strong></p>
+            <p><code>VR = V<sub>S</sub> × (Peso actual / Peso de referencia)<sup>n</sup></code></p>
+        </div>
+    </div>
+
+    <h2>Ejemplo Completo</h2>
+    <h3>Datos:</h3>
+    <ul>
+        <li>V<sub>S</sub>: 120 nudos (obtenido del manual).</li>
+        <li>Peso Vacío: 400,000 lb.</li>
+        <li>Peso de Combustible: 150,000 lb.</li>
+        <li>Peso de Pasajeros: 50,000 lb.</li>
+        <li>Peso de Carga: 10,000 lb.</li>
+        <li>Peso de Referencia: 500,000 lb.</li>
+        <li>n: 0.6.</li>
+    </ul>
+
+    <h3>Cálculos:</h3>
+    <ol>
+        <li><strong>Peso Actual:</strong> 400,000 + 150,000 + 50,000 + 10,000 = 610,000 lb.</li>
+        <li><strong>Cociente de Pesos:</strong> (610,000 / 500,000) = 1.22.</li>
+        <li><strong>Ajuste Exponencial:</strong> (1.22)<sup>0.6</sup> ≈ 1.161.</li>
+        <li><strong>Calcular VR:</strong> 120 × 1.161 ≈ 139.32 nudos.</li>
+    </ol>
+
+    <h2>Resultado Final</h2>
+    <p>La velocidad de rotación (VR) estimada sería aproximadamente <strong>139 nudos</strong>. Este procedimiento permite calcular VR teniendo en cuenta factores clave que afectan el rendimiento del avión durante el despegue.</p>
+    <p>Hecho por Qiwei</p>
+</body>
+</html>
